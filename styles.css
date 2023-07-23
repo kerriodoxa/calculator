@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(233, 203, 203);
+    color: rgb(224, 234, 234);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#container {
+    height: 700px;
+    width: 500px;
+    background-color: rgb(25, 25, 24);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 12px 20px 35px -14px rgba(46,44,46,0.94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 90%;
+    height: 90px;
+    margin-top: 30px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(54, 54, 54);
+    border-radius: 8px;
+    text-align: right;
+}
+
+hr {
+    margin-top: 10px;
+    background-color: rgb(134, 132, 132);
+    width: 90%;
+    height: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#display-text {
+    font-size: 45px;
+}
+
+.buttons {
+    margin-top: 45px;
+    width: 100%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr); 
+    background-color: transparent;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 64, 64);
+    transition: 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 23px -12px rgb(186, 178, 178);
+}
+
+.ac, .equals {
+    width: 200px;
+    border-radius: 20px;
+    grid-column: span 2;
+}
+
+
+.ac, .remove {
+    background-color: rgb(173, 169, 169);
+    color: rgb(25, 25, 24);
+}
+
+.divide, .multiply, .subtract, .add, .equals {
+    background-color: rgb(224, 144, 24);
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
